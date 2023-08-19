@@ -1,22 +1,40 @@
 # Desafio: Criando um Sistema Bancario Parte 2
 
-Continuação do Desafio: Criando um Sistema Bancário da Dio, agora com novos aprimoramentos no código  
+Continuação do Desafio: Este projeto é parte de um desafio proposto pela Digital Innovation One (DIO) para criar um sistema bancário utilizando a linguagem de programação Python. Esta é a segunda parte do projeto, apresentando melhorias significativas no código em relação à primeira versão.
 
 ## Objetivo
 
-Fomos contratados por um grande banco para desenvolver o seu novo sistema. Esse banco deseja modernizar suas operações e para isso escolheu a linguagem Python. Para a primeira versão do sistema devemos implementar apenas 3 operações: depósito, saque e extrato.
+Fomos contratados por um grande banco para desenvolver o seu novo sistema. Esse banco deseja modernizar suas operações e para isso escolheu a linguagem Python. Para a primeira versão do sistema devemos implementar novas funcionalidades
 
-#### Operação de depósito
-Deve ser possível depositar valores positivos para a minha conta bancária. A v1 do projeto trabalha apenas com 1 usuário, dessa forma não precisamos nos preocupar em identificar qual é o número da agência e conta bancária. Todos os depósitos devem ser armazenados em uma variável e exibidos na operação de extrato.
+## Funcionalidades
+O sistema bancário possui as seguintes funcionalidades:
 
-#### Operação de saque
-O sistema deve permitir realizar 3 saques diários com limite máximo de R$ 500,00 por saque. Caso o usuário não tenha saldo em conta, o sistema deve exibir uma mensagem informando que não será possível sacar o dinheiro por falta de saldo. Todos os saques devem ser armazenados em uma variável e exibidos na operação de extrato.
+ - Depositar: Permite realizar depósitos em uma conta bancária. O saldo da conta é atualizado e a transação é registrada no extrato.
 
-#### Operação de extrato
-Essa operação deve listar todos os depósitos e saquesrealizados na conta. No fim da listagem deve ser exibido o saldo atual da conta. Se o extrato estiver em branco, exibir a mensagem: Não foram realizadas movimentações.
+ - Sacar: Permite realizar saques da conta bancária. O saldo é verificado para garantir que há saldo suficiente, e o número de saques é controlado. As transações são registradas no extrato.
 
-'Os valores devem ser exibidos utilizando o formato R$ xxx.xx,
-exemplo: 1500.45 = R$ 1500.45'
+ - Extrato: Mostra o extrato da conta, exibindo todas as transações realizadas (depósitos e saques) e o saldo atual.
+
+ - Novo Usuário: Permite criar um novo usuário associado a uma conta bancária. São solicitadas informações como CPF, nome, data de nascimento e endereço.
+
+ - Nova Conta: Cria uma nova conta associada a um usuário já cadastrado. O número da conta é gerado automaticamente.
+
+ - Listar Contas: Exibe uma lista de todas as contas criadas, mostrando a agência, o número da conta e o titular.
+
+## Melhorias Implementadas
+Nesta segunda parte do projeto, foram implementadas as seguintes melhorias no código:
+
+ - Organização do Menu: O menu de opções foi melhor formatado, utilizando uma formatação mais legível para o usuário.
+
+ - Utilização de Módulo de Texto: O módulo textwrap foi utilizado para formatação de texto automática, tornando a exibição mais organizada.
+
+ - Controle de Saques: O sistema implementa um controle de número máximo de saques permitidos por conta.
+
+ - Cadastro de Usuários: Agora é possível cadastrar novos usuários associados a uma conta bancária.
+
+ - Exibição de Extrato: A função de exibir o extrato foi melhorada, mostrando todas as transações e o saldo atual.
+
+ - Listagem de Contas: A função de listar contas foi aprimorada para exibir de forma mais clara as informações das contas.
 
 ## Aprendizados
 
